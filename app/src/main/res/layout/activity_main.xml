@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="#B6B6B6"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#D3D3D3"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/menu"
+            />
+
+        <Button
+            android:id="@+id/buttonRefresh"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="190dp"
+            android:backgroundTint="#D3D3D3"
+            android:drawableLeft="@drawable/refresh"
+            />
+
+        <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="1dp"
+            android:backgroundTint="#D3D3D3"
+            android:drawableLeft="@drawable/edit"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        android:layout_below="@id/nav"
+        android:background="@color/white">
+    </FrameLayout>
+
+</RelativeLayout>
